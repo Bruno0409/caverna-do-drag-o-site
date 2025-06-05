@@ -51,15 +51,15 @@
                     padding-bottom: 24px;
                     transition: height, .5s ease;
 
-                    ul {
-                    list-style-type: disc;
-                    list-style-position: inside; /* traz a bolinha pra dentro do box do li */
-                    }
+                ul {
+                list-style-type: disc;
+                list-style-position: inside; 
+                }
 
-                    li {
-                    padding-top: 16px;
-                    padding-left: 20px;
-                    }
+                li {
+                padding-top: 16px;
+                padding-left: 20px;
+                }
 
                 }
             }
