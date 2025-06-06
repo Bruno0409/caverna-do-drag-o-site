@@ -2,19 +2,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('[data-tab-button]');
     const questions = document.querySelectorAll('[data-faq-question]');
 
-    const heroSection = document.querySelector('hero');
+    const heroSection = document.querySelector('.hero');
     const alturaHero = heroSection.clientHeight;
 
     window.addEventListener('scroll', function() {
-        console.log(window.scrollY);
-    })
+        const posicaoAtual = window.scrollY;
 
         if (posicaoAtual < alturaHero) {
-            console.log("ocultar os elementos")
+            ocultarElementoDoHeader();
+        } else {
+            exibeElementodDoHeader()
         }
-    
+    })
 
-            // Seção de atrações, programas das abas
+            // Seção de atrações, programação das abas
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function (botao) {
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
             aba.classList.add('shows__list--is-active');
 
-            // 4. Adiciona classe ativa ao botão clicado
+            //  Adiciona classe ativa ao botão clicado
             botao.target.classList.add('shows__tabs__button--is-active');
         });
     }
@@ -38,6 +39,16 @@ document.addEventListener('DOMContentLoaded', function () {
         questions[i].addEventListener('click', abreOuFechaResposta)
         }
 })
+
+function ocultarElementoDoHeader() {
+    const header = document.querySelector('header');
+    header.classList.add('header--is-hidden');
+}
+
+function exibeElementodDoHeader() {
+    const header = document.querySelector('header');
+    header.classList.remove('header--is-hidden');
+}
 
 function abreOuFechaResposta(elemento) {
     const classe = 'faq__questions__item--is-open';
