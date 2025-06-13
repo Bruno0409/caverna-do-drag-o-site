@@ -11,7 +11,7 @@ function scripts() {
 
 function styles() {
     return gulp.src('./src/styles/*.scss')
-        .pipe(sass({style: 'compressed' }))
+        .pipe(sass({ style: 'compressed' }))
         .pipe(gulp.dest('./dist/css'));
 }
 
@@ -21,7 +21,20 @@ function images() {
         .pipe(gulp.dest('./dist/images'));
 }
 
-exports.default = gulp.parallel(styles,images, scripts);
+// ✅ Defina o watch antes de usar na default
+function watch() {
+    gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
+    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts));
+}
+
+exports.watch = watch;
+
+exports.default = gulp.series(
+    gulp.parallel(styles, images, scripts),
+    watch
+);
+
+
 
 exports.watch = function(){
     gulp.watch ('./src/styles/*.scss', gulp.parallel(styles))

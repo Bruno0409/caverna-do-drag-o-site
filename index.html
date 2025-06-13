@@ -10,11 +10,11 @@
     <header class="header">
         <div class="header__container">
             <h1>
-                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+                <img class="header__logo" src="./src/images/logo2.jpg" alt="Logo Caverna do Dragao">
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button button--secondary">Assine agora</a>
+                    <a href="https://www.dailymotion.com/video/x5dkho0" class="button button--secondary">Assista agora</a>
                 </li>
                 <li class="header__links__item">
                     <a href="#" class="button button--dark">Entrar</a>
@@ -23,243 +23,139 @@
         </div>
     </header>
     <section class="hero">
-        <div class="hero__content">
-            <div class="hero__content__branding">
-                <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </div>
-            <h3 class="title--small">
-                As melhores histórias em um só lugar.
-            </h3>
-            <p>
-                <a href="#" class="link--text">Assinar o Disney+</a> 
-                <br>
-                <span class="text">
-                    R$ 27,90/mês ou R$ 279,90/ano à vista*
-                </span>
-            </p>
-            <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button class="button">Assine Agora</button>
-                    <span class="text">R$ 45,90/mês*</span>
-                </li>
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="Disney+ - Star+ - STARZPLAY">
-                    <button class="button">Assine Agora</button>
-                    <span class="text">R$ 62,90/mês*</span>
-                </li>
-            </ul>
-            <p class="text--small">
-                *O preço pode variar caso a assinatura seja feita através de outras plataformas.
+    </section>
+    <section class="image-text-section">
+        <img src="./src/images/sobre.webp" alt="Imagem com TV, Coputador, Tablet e Celular" style="border-radius: 12px">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Sobre a Série</h2>
+            <p class="text--big">
+                Caverna do Dragão é uma animação dos anos 80 baseada no jogo de RPG Dungeons & Dragons. Seis jovens são transportados para um mundo mágico ao entrarem em uma montanha-russa e recebem armas mágicas do Mestre dos Magos. </br>
+                Enquanto buscam voltar para casa, enfrentam monstros, armadilhas e o vilão Vingador. Cada um representa uma classe de RPG, como arqueiro, mago e ladino. A série ficou marcada por suas aventuras, mistério e lições sobre coragem e amizade.
             </p>
         </div>
     </section>
     <section class="shows">
         <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
-                Em breve
+            <button data-tab-button="personagens" class="shows__tabs__button shows__tabs__button--is-active">
+                Personagens
             </button>
-            <button data-tab-button="populares" class="shows__tabs__button">
-                Mais populares
+            <button data-tab-button="episodios" class="shows__tabs__button">
+                Episódios
             </button>
-            <button data-tab-button="star_plus" class="shows__tabs__button">
-                Mais no star+
-            </button>
-        </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+        </nav>    
+        <ul data-tab-id="personagens" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+                <img src="./src/images/bobby.jpg" alt="Bobby">
+                <h3>Bobby (Bárbaro)</h3>
+                <p>Irmão caçula impulsivo, usa um tacape que causa terremotos.</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomem">
+                <img src="./src/images/uni.jpg" alt="Uni">
+                <h3>Uni</h3>
+                <p>A sequência mágica que continua a história de Encantada, trazendo novos desafios e aventuras.</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem Limites">
+                <img src="./src/images/diana.jpg" alt="Diana">
+                <h3>Diana (Acrobata)</h3>
+                <p>Ágil, forte e confiante, luta com um bastão mágico.</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/eric.jpg.webp" alt="Eric">
+                <h3>Eric (Cavaleiro)</h3>
+                <p>Medroso e reclamão, mas fiel, com escudo que repele ataques.</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The Santa Clauses">
+                <img src="./src/images/hank.jpg" alt="Hank">
+                <h3>Hank (Arqueiro)</h3>
+                <p>Líder corajoso e justo, usa um arco mágico de energia.</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+                <img src="./src/images/presto.jpg" alt="Presto">
+                <h3>Presto (Mago)</h3>
+                <p>Desastrado e inteligente, conjura feitiços com chapéu mágico.</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/mestre.png.avif" alt="Mestre dos magos">
+                <h3>Mestre dos Magos</h3>
+                <p>Enigmático guia do grupo, aparece e some misteriosamente.</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/vingador-caverna-do-dragao.jpg" alt="Vingador">
+                <h3>Vingador</h3>
+                <p>Vilão poderoso, quer capturar os heróis e controlar seus artefatos.</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/sheila.jpg" alt="sheila">
+                <h3>Sheila (Ladra)</h3>
+                <p>Irmã protetora de Bobby, fica invisível com sua capa mágica.</p>
             </li>
         </ul>
-        <ul data-tab-id="populares" class="shows__list">
+        <ul data-tab-id="episodios" class="shows__list">
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey">
+                <a href="https://www.dailymotion.com/video/x8layjk" target="_blank" class="shows__list__item__link">
+                    <img src="https://s1.dmcdn.net/v/JaDi31e0HXkQFLWS7/x240"  alt="Caverna do Dragão Episódio 1">
+                    <h3>A Noite Sem Amanhã</h3>
+                    <p>Episódio 01</p>
+                </a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Cavalheira da Lua">
+                <a href="https://www.dailymotion.com/video/x8leswc" target="_blank">
+                    <img src="https://s1.dmcdn.net/v/U-TxC1clSgkTpcS4r/x240" alt="Caverna do Dragão Episódio 2">
+                    <h3>O Olho do Observador</h3>
+                    <p>Episódio 02</p>
+                </a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="O Incrível Dr. Pol">
+                <a href="https://www.dailymotion.com/video/x8leulu" target="_blank">
+                    <img src="https://s1.dmcdn.net/v/U-UTo1e0GuDH3nmv9/x240" alt="Caverna do Dragão Episódio 3">
+                    <h3>O Salão dos Ossos</h3>
+                    <p>Episódio 03</p>
+                </a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan">
+                <a href="https://www.dailymotion.com/video/x8leuro" target="_blank">
+                    <img src="https://s1.dmcdn.net/v/U-UX41e0GurjtU1c5/x240" alt="Caverna do Dragão Episódio 4">
+                    <h3>O Vale dos Unicórnios</h3>
+                    <p>Episódio 04</p>
+                </a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/red.jpg" alt="Red">
+                <a href="https://www.dailymotion.com/video/x8leuyi" target="_blank">
+                    <img src="https://s1.dmcdn.net/v/U-Uaw1e9nprtS9e9_/x240" alt="Caverna do Dragão Episódio 5">
+                    <h3>Em Busca do Mestre dos Magos</h3>
+                    <p>Episódio 05</p>
+                </a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo Igual">
+                <a href="https://www.dailymotion.com/video/x8m4eox" target="_blank">
+                    <img src="https://s1.dmcdn.net/v/V31bX1clSgkuEB7Ys/x240" alt="Caverna do Dragão Episódio 6">
+                    <h3>A Bela e a Fera do Pântano</h3>
+                    <p>Episódio 06</p>
+                </a>
             </li>
         </ul>
-        <ul data-tab-id="star_plus" class="shows__list">
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Lobisomem">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="NBA">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="Os Simpson">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="Premier League">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="The Kardashians">
-            </li>
-        </ul>
     </section>
-    <section class="plans">
-        <h2 class="title--big">Escolha seu Plano</h2>
-        <ul class="plans__list">
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
-                <strong class="title--small"> R$ 27,90/mês*</strong>
-                <p class="text--big">No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.</p>
-                <button class="button">Assine agora</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
-                <strong class="title--small"> R$ 45,90/mês*</strong>
-                <p class="text--big">Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois por um preco único.</p>
-                <button class="button">Assine agora</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
-                <strong class="title--small"> R$ 55,90/mês*</strong>
-                <p class="text--big">Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.</p>
-                <button class="button">Assine agora</button>
-            </li>
-        </ul>
-        <p class="text--small">
-            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
-        </p>
-    </section>
-    <section class="image-text-section">
-        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com TV, Coputador, Tablet e Celular">
-        <div class="image-text-section__text_container">
-            <h2 class="title">Assista do seu jeito</h2>
-            <p class="text--big">
-                Aproveite a tela grande da TV ou assista no Tablet, Laptop, Celular e outros aparelhos. Nossa seleção de titulos em 4k não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
-            </p>
-        </div>
-    </section>
-    <section class="image-text-section image-text-section--image-full-width">
-        <picture>
-            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
-            <img src="./dist/images/fundo_rei_leao.png" alt="O Rei Leão">
-        </picture>
-        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
-            <h2 class="title">Baixe filmes e séries</h2>
-            <p class="text--big">
-                Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
-            </p>
-        </div>
-    </section>
-    <section class="available-devices">
-        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
-            <ul class="available-devices__list">
-                <li class="available-devices__list__item">
-                    <img src="./dist/images/dispositivos/computador.png" alt="Computador">
-                    <h4 class="title--small">Computador</h4>
-                    <ul class="text">
-                        <li>Chrome OS</li>
-                        <li>MacOS</li>
-                        <li>PC Windows</li>
-                    </ul>
-                </li>
-                <li class="available-devices__list__item">
-                    <img src="./dist/images/dispositivos/celular.png" alt="Celular">
-                    <h4 class="title--small">Celulares e Tablets</h4>
-                    <ul class="text">
-                        <li>Tablets Amazon Fire</li>
-                        <li>Celulares e Tablets Android</li>
-                        <li>iPhone e iPad</li>
-                    </ul>
-                </li>
-                <li class="available-devices__list__item">
-                    <img src="./dist/images/dispositivos/tv.png" alt="TV">
-                    <h4 class="title--small">TV</h4>
-                    <ul class="text">
-                        <li>Amazon Fire TV</li>
-                        <li>Android TV</li>
-                        <li>Apple TV</li>
-                        <li>Chromecast</li>
-                        <li>TVs LG</li>
-                        <li>Roku</li>
-                        <li>Samsung</li>
-                    </ul>
-                </li>
-                <li class="available-devices__list__item">
-                    <img src="./dist/images/dispositivos/videogames.png" alt="Videogames">
-                    <h4 class="title--small">Videogames</h4>
-                    <ul class="text">
-                        <li>PS4</li>
-                        <li>PS5</li>
-                        <li>Xbox One</li>
-                        <li>Xbox Series X</li>
-                        <li>Xbox Series S</li>
-                    </ul>
-                </li>
-            </ul>
-    </section>
+                
     <section class="faq">
         <h2 class="title">Perguntas frequentes</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    O que está incluído no Disney+?
+                    Como os personagens foram parar no mundo mágico?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Benefícios de assinar o Disney+:
                     <ul>
-                        <li>Estreias de filmes, séries originais e clássicos da Disney, Pixar, Marvel, Star Wars, National Geographic e Star.</li>
-                        <li>Os torneios mais importantes do mundo e programas da ESPN ao vivo.</li>
-                        <li>Até quatro telas ao mesmo tempo com o Disney+ Premium, e até duas com o Disney+ Padrão.</li>
-                        <li>Downloads, criação de perfis e controle parental para personalizar a experiência por idade, de acordo com o seu plano.</li>
+                        <li>Eles entraram em uma montanha-russa em um parque de diversões e, durante o passeio, foram transportados para um mundo mágico conhecido como Reino. Lá, encontraram o Mestre dos Magos, que lhes deu armas mágicas para ajudá-los em sua jornada de volta para casa.</li>
                     </ul>
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Quais formas de pagamento posso utilizar?
+                    Quem é o principal vilão da série?
                 </div>
                 <div class="faq__questions__item__answer text--big">
                     <ul>
-                        <li>Você pode pagar com cartão de crédito, débito ou Mercado Pago, ou por meio de empresas parceiras, como Mercado Livre e provedores locais de TV, telefone e internet.</li>
-                    </ul>
-                </div>
-            </li>
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question>
-                    Onde posso assistir ao Disney+?
-                </div>
-                <div class="faq__questions__item__answer text--big">
-                    <ul>
-                        <li>
-                        O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames, decodificadores e smart TVs. Confira a 
-                        <a href="https://help.disneyplus.com/pt-BR/article/?utm_source=disneyplus&utm_medium=web&utm_campaign=homepage-FAQ&utm_content=supported-devices" style="color: white;">
-                            lista completa de dispositivos compatíveis na Central de Ajuda.
-                        </a>
-                        </li>
+                        <li>O principal vilão é o Vingador, um feiticeiro poderoso que deseja capturar as armas mágicas dos jovens para dominar o Reino. Ele aparece em quase todos os episódios tentando enganar ou capturar os heróis.</li>
                     </ul>
                 </div>
             </li>
@@ -267,7 +163,7 @@
     </section>
     <footer class="footer">
         <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <img class="footer__logo" src="./src/images/logo.png" alt="Lodo Caverna do Dragao">
         <ul class="footer__links">
             <li class="footer__links__item">
                 <div class="language-selector">
@@ -284,27 +180,12 @@
             <li class="footer__links__item">
                 <a href="#" class="text--small">Politica de Privacidade</a>
             </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Proteção de Dados do Brasil</a>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Anúncios Personalizados</a>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Dispositivos Compatíveis</a>
-            </li>
-            <li class="footer__links__item">
+           <li class="footer__links__item">
                 <a href="#" class="text--small">Ajuda</a>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Sobre o Disney+</a>
-            </li>
+            </li>           
         </ul>
         <p class="text--small">
-            © 2025 Disney e suas empresas afiliadas. Todos os direitos reservados.
-        <p class="text--small">
-        A programação do conteúdo esportivo varia de acordo com o plano. Para usar o Disney+, é necessário ser assinante e ter mais de 18 anos de idade. Conteúdo sujeito a disponibilidade. </br>
-        O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+         Caverna do Dragão é uma série animada originalmente produzida por Marvel Productions e TSR nos anos 1980, baseada no universo do jogo de RPG Dungeons & Dragons. No Brasil, a série se tornou um clássico cult ao ser exibida por emissoras como TV Globo, SBT e canais pagos como Cartoon Network e Rede Brasil. Todos os direitos sobre os personagens e histórias pertencem aos seus criadores e detentores legais. Este site é um projeto de fã, sem fins comerciais.
         </p>
         </div>
     </footer>

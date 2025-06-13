@@ -1,62 +1,124 @@
-
 @use 'variaveis';
 
+@font-face {
+font-family: Avenir;
+src: url('../../assets/fonts/Avenir-Regular.woff2') format('woff2');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: Avenir;
+src: url('../../assets/fonts/Avenir-Bold.woff2') format('woff2');
+font-weight: 700;
+font-style: normal;
+}
+
 .shows {
-    padding: 2vw 5.6vw;
-    min-height: 50vw;
+padding: 2vw 5.6vw;
+min-height: 50vw;
 
-    &__list {
-        margin-top: 44px;
-        display: none;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 24px;
+&__list {
+    margin-top: 44px;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
 
-        @media (max-width: 768px){
-            grid-template-columns: 1fr 1fr;
-        }
-
-        &--is-active {
-            display: grid;
-        }
-        
-
-        &__item{
-            img {
-                max-width: 100%;
-                border-radius: 4px;
-            }
-        }
+    @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
     }
 
-    &__tabs {
+    &--is-active {
+    display: grid;
+    }
+
+    &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    font-family: 'Avenir', sans-serif;
+    background-color: #73290c;
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: 200px; // padroniza altura
+        object-fit: cover; // mantém proporção
+        border-radius: 4px;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        color: #ccc;
+        font-weight: 400;
+        margin-top: auto;
+    }
+
+    // 👉 Estilo dos links dentro do item
+    a {
+        color: inherit;
+        text-decoration: none;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        height: 100%;
 
-        @media (max-width: 768px) {
-            white-space: nowrap;
-            overflow-x: scroll;
-            padding-left: 20px;
-        }
-
-        &__button {
-            color: variaveis.$corTextoSecundario;
-            font-size: 20px;
-            border: none;
-            padding-bottom: 5px;
-            background: none;
-            text-transform: uppercase;
-            margin: 0 1vw;
-            cursor: pointer;
-            border-bottom: 5px solid transparent;
-
-            &--is-active {
-                border-color: variaveis.$corTextoSecundario;
-            }
-
-            @media (max-width: 768px){
-                font-size: 16px;
-            }
-            
+        h3, p {
+        color: inherit;
+        text-decoration: none;
         }
     }
+    }
+}
+
+// ✅ Corrigido: link deve estar dentro de .shows
+&__link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+&__tabs {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding-left: 20px;
+    }
+
+    &__button {
+    color: variaveis.$corTextoSecundario;
+    font-size: 20px;
+    border: none;
+    padding-bottom: 5px;
+    background: none;
+    text-transform: uppercase;
+    margin: 0 1vw;
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+
+    &--is-active {
+        border-color: variaveis.$corTextoSecundario;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+    }
+}
 }
