@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 
-            // Seção de atrações, programação das abas
+            
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function (botao) {
@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
             aba.classList.add('shows__list--is-active');
 
-            //  Adiciona classe ativa ao botão clicado
+           
             botao.target.classList.add('shows__tabs__button--is-active');
         });
     }
 
-     // Seção FAQ, accordion
+     
 
     for (let i = 0; i < questions.length; i++) {
     questions[i].addEventListener('click', abreOuFechaResposta);
