@@ -21,7 +21,7 @@ function images() {
         .pipe(gulp.dest('./dist/images'));
 }
 
-// ✅ Defina o watch antes de usar na default
+
 function watch() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
     gulp.watch('./src/scripts/*.js', gulp.parallel(scripts));
