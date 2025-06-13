@@ -4,6 +4,8 @@
 @use 'faq';
 @use 'footer';
 @use 'header';
+@use 'sass:color';
+
 
 
 @font-face {
@@ -114,7 +116,8 @@ body {
     border: 1px solid variaveis.$corDeFundoBotaoPrimario;
 
     &:hover {
-            background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
+            background-color: color.adjust(variaveis.$corDeFundoBotaoPrimario, $lightness: 3%);
+
             
         }
 
@@ -123,7 +126,8 @@ body {
         border-color: variaveis.$corTextoSecundario;
 
         &:hover {
-            background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 3%);
+            background-color: color.adjust(variaveis.$corDeFundoBotaoPrimario, $lightness: 3%);
+
             
         }
     }

@@ -29,10 +29,9 @@ function watch() {
 
 exports.watch = watch;
 
-exports.default = gulp.series(
-    gulp.parallel(styles, images, scripts),
-    watch
-);
+exports.default = gulp.series(styles, images, scripts);
+exports.dev = gulp.series(styles, images, scripts, watch); // para rodar localmente
+
 
 
 
